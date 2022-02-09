@@ -8,7 +8,7 @@ if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUP
 const LANG = TRANSLATIONS[selectedLang]
 
 const SHAPES = ["firkant", "trekant", "rektangel", "sirkel"]
-const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
+const COLORABLE = ['bakgrunn', 'fargetekst', 'formtekst', 'nummer', 'form']
 
 const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
@@ -30,9 +30,9 @@ const COLORS = {
 
 // functions that return answers from PuzzleData class
 const QUESTIONS = {
-    'bakgrunn farge' : (d) => d.colors['bakgrunn'],
-    'farge text bakgrunn farge' : (d) => d.colors['fargetext'],
-    'form text bakgrunn farge' : (d) => d.colors['formtext'],
+    'bakgrunn color' : (d) => d.colors['bakgrunn'],
+    'color text bakgrunn farge' : (d) => d.colors['fargetekst'],
+    'form text bakgrunn farge' : (d) => d.colors['formtekst'],
     'nummer farge' : (d) => d.colors['nummer'],
     'form farge' : (d) => d.colors['form'],
     'farge text' : (d) => d.text[0],
