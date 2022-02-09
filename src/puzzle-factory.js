@@ -8,7 +8,7 @@ if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUP
 const LANG = TRANSLATIONS[selectedLang]
 
 const SHAPES = ["firkant", "trekant", "rektangel", "sirkel"]
-const COLORABLE = ['bakgrunn', 'fargetext', 'formtext', 'nummer', 'form']
+const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
 const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
