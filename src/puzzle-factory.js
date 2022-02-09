@@ -18,14 +18,14 @@ const LANG_COLORS = LANG.COLORS.reduce((obj, key, i) => {obj[key] = COLOR_CODES[
 // console.log('colors var', COLORS)
 // COLORS becomes this:
 const COLORS = {
-    'svart' : '#000000',
-    'hvit' : '#ffffff',
-    'blå' : '#1991F9',
-    'rød' : '#8C0C00',
-    'gul' : '#FFE335',
-    'oransje' : '#FF9900',
-    'grønn' : '#46A04F',
-    'lilla' : '#A43AB5',
+    'black' : '#000000',
+    'white' : '#ffffff',
+    'blue' : '#1991F9',
+    'red' : '#8C0C00',
+    'yellow' : '#FFE335',
+    'orange' : '#FF9900',
+    'green' : '#46A04F',
+    'purple' : '#A43AB5',
 }
 
 // functions that return answers from PuzzleData class
