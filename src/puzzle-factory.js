@@ -7,8 +7,8 @@ const selectedLang = TRANSLATIONS.SELECTED_LANGUAGE
 if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUPPORTED\nSELECTED: ${TRANSLATIONS.SELECTED_LANGUAGE}\nAVAILABLE: ${TRANSLATIONS.LANGUAGES}`)
 const LANG = TRANSLATIONS[selectedLang]
 
-const SHAPES = ["square", "triangle", "rectangle", "circle"]
-const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
+const SHAPES = ["firekant", "trekant", "rektangel", "sirkel"]
+const COLORABLE = ['bakgrunn', 'fargetext', 'formtext', 'nummer', 'form']
 
 const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
