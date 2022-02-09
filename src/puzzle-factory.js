@@ -8,7 +8,7 @@ if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUP
 const LANG = TRANSLATIONS[selectedLang]
 
 const SHAPES = ["firekant", "trekant", "rektangel", "sirkel"]
-const COLORABLE = ['bakgrunn', 'fargetext', 'formtext', 'nummer', 'form']
+const COLORABLE = ['bakgrunn', 'fargetekst', 'formtekst', 'nummer', 'form']
 
 const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
@@ -30,45 +30,45 @@ const COLORS = {
 
 // functions that return answers from PuzzleData class
 const QUESTIONS = {
-    'background color' : (d) => d.colors['background'],
-    'color text background color' : (d) => d.colors['colortext'],
-    'shape text background color' : (d) => d.colors['shapetext'],
-    'number color' : (d) => d.colors['number'],
-    'shape color' : (d) => d.colors['shape'],
+    'bakgrunn color' : (d) => d.colors['bakgrunn'],
+    'color text bakgrunn color' : (d) => d.colors['fargetekst'],
+    'form text bakgrunn color' : (d) => d.colors['formtekst'],
+    'nummer color' : (d) => d.colors['nummer'],
+    'form color' : (d) => d.colors['form'],
     'color text' : (d) => d.text[0],
-    'shape text' : (d) => d.text[1],
-    'shape' : (d) => d.shape
+    'form text' : (d) => d.text[1],
+    'form' : (d) => d.form
 }
 
 class PuzzleData {
-    constructor(shape, number, text, colors) {
-      this.shape = form
-      this.number = nummer
+    constructor(form, nummer, text, colors) {
+      this.form = form
+      this.nummer = nummer
       this.text = text
-      this.colors = farge
+      this.colors = colors
     }
 }
 
 // generates a random puzzle
 export function generateRandomPuzzle(){
 
-    const shape = sample(SHAPES)
-    const number = randomInt(9) + 1
+    const form = sample(SHAPES)
+    const nummer = randomInt(9) + 1
 
     const topText = sample(Object.keys(LANG_COLORS))
     const bottomText = sample(SHAPES)
 
     const colors = COLORABLE.reduce((obj, color) => {obj[color] = sample(Object.keys(COLORS)); return obj}, {})
 
-    // ensure color and shape text don't blend with background
-    while(['colortext', 'shapetext'].map(i => colors[i]).includes(colors['background']))
-        colors['background'] = sample(Object.keys(COLORS))
+    // ensure color and form text don't blend with bakgrunn
+    while(['fargetekst', 'formtekst'].map(i => colors[i]).includes(colors['bakgrunn']))
+        colors['bakgrunn'] = sample(Object.keys(COLORS))
 
-    // ensure nothing blends with shape
-    while(['background', 'colortext', 'shapetext', 'number'].map(i => colors[i]).includes(colors['shape']))
-        colors['shape'] = sample(Object.keys(COLORS))
+    // ensure nothing blends with form
+    while(['bakgrunn', 'fargetekst', 'formtekst', 'nummer'].map(i => colors[i]).includes(colors['form']))
+        colors['form'] = sample(Object.keys(COLORS))
 
-    return new PuzzleData(shape, number, [topText, bottomText], colors)
+    return new PuzzleData(form, nummer, [topText, bottomText], colors)
 }
 
 
@@ -101,11 +101,11 @@ export function generateQuestionAndAnswer(nums, puzzles){
 // takes in a puzzleData class and converts language of colors
 function convertPuzzleDataLang(puzzle){
     const result = puzzle
-    puzzle.colors.background = convertColor(puzzle.colors.background)
-    puzzle.colors.number = convertColor(puzzle.colors.number)
-    puzzle.colors.shape = convertColor(puzzle.colors.shape)
-    puzzle.colors.colortext = convertColor(puzzle.colors.colortext)
-    puzzle.colors.shapetext = convertColor(puzzle.colors.shapetext)
+    puzzle.colors.bakgrunn = convertColor(puzzle.colors.bakgrunn)
+    puzzle.colors.nummer = convertColor(puzzle.colors.nummer)
+    puzzle.colors.form = convertColor(puzzle.colors.form)
+    puzzle.colors.fargetekst = convertColor(puzzle.colors.fargetekst)
+    puzzle.colors.formtekst = convertColor(puzzle.colors.formtekst)
     puzzle.text = puzzle.text.map(i => isColor(i) ? convertColor(i) : i)
     return result
 }
