@@ -42,10 +42,10 @@ const QUESTIONS = {
 
 class PuzzleData {
     constructor(shape, number, text, colors) {
-      this.shape = shape
-      this.number = number
+      this.shape = form
+      this.number = nummer
       this.text = text
-      this.colors = colors
+      this.colors = farge
     }
 }
 
