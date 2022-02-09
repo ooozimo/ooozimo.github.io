@@ -30,8 +30,8 @@ const COLORS = {
 
 // functions that return answers from PuzzleData class
 const QUESTIONS = {
-    'bakgrunn color' : (d) => d.colors['bakgrunn'],
-    'color text bakgrunn farge' : (d) => d.colors['fargetekst'],
+    'bakgrunn farge' : (d) => d.colors['bakgrunn'],
+    'farge text bakgrunn farge' : (d) => d.colors['fargetekst'],
     'form text bakgrunn farge' : (d) => d.colors['formtekst'],
     'nummer farge' : (d) => d.colors['nummer'],
     'form farge' : (d) => d.colors['form'],
