@@ -8,9 +8,9 @@ if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUP
 const LANG = TRANSLATIONS[selectedLang]
 
 const SHAPES = ["firekant", "trekant", "rektangel", "sirkel"]
-const COLORABLE = ['bakgrunn', 'fargetekst', 'formtekst', 'nummer', 'form']
+const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
-const COLOR_CODES = ['#000000', '#ffffff','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
+const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
 const LANG_COLORS = LANG.COLORS.reduce((obj, key, i) => {obj[key] = COLOR_CODES[i]; return obj}, {})
 
@@ -18,8 +18,8 @@ const LANG_COLORS = LANG.COLORS.reduce((obj, key, i) => {obj[key] = COLOR_CODES[
 // console.log('colors var', COLORS)
 // COLORS becomes this:
 const COLORS = {
-    'black' : '#000000',
-    'white' : '#ffffff',
+    'black' : 'black',
+    'white' : 'white',
     'blue' : '#1991F9',
     'red' : '#8C0C00',
     'yellow' : '#FFE335',
