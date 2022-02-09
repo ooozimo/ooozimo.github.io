@@ -17,6 +17,6 @@ export default
         COLORS : ['nero', 'bianco', 'blu', 'rosso', 'giallo', 'arancione', 'verde', 'viola']
     },
     FR : {
-        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lila']
+        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
     }
 }
