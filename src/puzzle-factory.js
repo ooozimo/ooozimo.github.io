@@ -43,8 +43,8 @@ const QUESTIONS = {
 
 class PuzzleData {
     constructor(shape, number, text, colors) {
-      this.shape = shape
-      this.number = number
+      this.form = shape
+      this.nummer = number
       this.text = text
       this.colors = colors
     }
