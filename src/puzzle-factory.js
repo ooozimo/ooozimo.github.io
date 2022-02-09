@@ -8,7 +8,7 @@ if(!TRANSLATIONS.LANGUAGES.includes(selectedLang)) console.log(`LANGUAGE NOT SUP
 const LANG = TRANSLATIONS[selectedLang]
 
 const SHAPES = ["firkant", "trekant", "rektangel", "sirkel"]
-const COLORABLE = ['bakgrunn', 'fargetekst', 'formtekst', 'nummer', 'form']
+const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
 const COLOR_CODES = ['black', 'white','#1991F9','#8C0C00','#FFE335','#FF9900','#46A04F','#A43AB5']
 
@@ -30,21 +30,20 @@ const COLORS = {
 
 // functions that return answers from PuzzleData class
 const QUESTIONS = {
-    'bakgrunn farge' : (d) => d.colors['bakgrunn'],
-    'farge text bakgrunn farge' : (d) => d.colors['fargetekst'],
-    'form text bakgrunn farge' : (d) => d.colors['formtekst'],
-    'nummer color' : (d) => d.colors['nummer'],
-    'form color' : (d) => d.colors['form'],
-    'farge text' : (d) => d.text[0],
-    'form text' : (d) => d.text[1],
-    'form' : (d) => d.shape
+    'background color' : (d) => d.colors['background'],
+    'color text background color' : (d) => d.colors['colortext'],
+    'shape text background color' : (d) => d.colors['shapetext'],
+    'number color' : (d) => d.colors['number'],
+    'shape color' : (d) => d.colors['shape'],
+    'color text' : (d) => d.text[0],
+    'shape text' : (d) => d.text[1],
+    'shape' : (d) => d.shape
 }
-
 
 class PuzzleData {
     constructor(shape, number, text, colors) {
-      this.form = shape
-      this.nummer = number
+      this.shape = shape
+      this.number = number
       this.text = text
       this.colors = colors
     }
