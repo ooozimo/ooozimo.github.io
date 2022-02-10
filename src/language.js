@@ -8,7 +8,7 @@ export default
 
     LANGUAGES : ['EN', 'ES', 'IT', 'FR'],
     EN : {
-        COLORS : ['black', 'white', 'blue', 'red', 'yellow', 'orange', 'green', 'purple']
+        COLORS : ['black', 'white', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
     },
     ES : {
         COLORS : ['negro', 'blanco', 'azul', 'rojo', 'amarillo', 'naranja', 'verde', 'púrpura']
