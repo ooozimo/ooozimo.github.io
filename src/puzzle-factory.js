@@ -30,7 +30,7 @@ const COLORS = {
 
 // functions that return answers from PuzzleData class
 const QUESTIONS = {
-    'bakgrunn farge' : (d) => d.colors['background'],
+    'bakgrunn farge' : (d) => d.colors['bakground'],
     'farge text bakgrunn farge' : (d) => d.colors['colortext'],
     'form text bakgrunn farge' : (d) => d.colors['shapetext'],
     'nummer farge' : (d) => d.colors['number'],
@@ -41,7 +41,7 @@ const QUESTIONS = {
 }
 
 class PuzzleData {
-    constructor(shape, number, text, colors) {
+    constructor(form, nummer, text, farge) {
       this.shape = shape
       this.number = number
       this.text = text
@@ -61,7 +61,7 @@ export function generateRandomPuzzle(){
     const colors = COLORABLE.reduce((obj, color) => {obj[color] = sample(Object.keys(COLORS)); return obj}, {})
 
     // ensure color and shape text don't blend with background
-    while(['colortext', 'shapetext'].map(i => colors[i]).includes(colors['background']))
+    while(['fargetext', 'shapetext'].map(i => colors[i]).includes(colors['background']))
         colors['background'] = sample(Object.keys(COLORS))
 
     // ensure nothing blends with shape
