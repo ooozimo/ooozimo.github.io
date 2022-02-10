@@ -8,7 +8,7 @@ export default
 
     LANGUAGES : ['EN', 'ES', 'IT', 'FR'],
     EN : {
-        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
+        COLORS : ['black', 'white', 'blue', 'red', 'yellow', 'orange', 'green', 'purple']
     },
     ES : {
         COLORS : ['negro', 'blanco', 'azul', 'rojo', 'amarillo', 'naranja', 'verde', 'púrpura']
@@ -17,6 +17,6 @@ export default
         COLORS : ['nero', 'bianco', 'blu', 'rosso', 'giallo', 'arancione', 'verde', 'viola']
     },
     FR : {
-        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
+        COLORS : ['noir', 'blanc', 'bleu', 'rouge', 'jaune', 'orange', 'vert', 'violet']
     }
 }
