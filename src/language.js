@@ -4,11 +4,11 @@ export default
     // lengua española = 'ES'
     // lingua italiana = 'IT'
     // english language = 'EN'
-    SELECTED_LANGUAGE : 'FR',
+    SELECTED_LANGUAGE : 'EN',
 
     LANGUAGES : ['EN', 'ES', 'IT', 'FR'],
     EN : {
-        COLORS : ['black', 'white', 'blue', 'red', 'yellow', 'orange', 'green', 'purple']
+        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
     },
     ES : {
         COLORS : ['negro', 'blanco', 'azul', 'rojo', 'amarillo', 'naranja', 'verde', 'púrpura']
