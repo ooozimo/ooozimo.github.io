@@ -4,7 +4,7 @@ export default
     // lengua española = 'ES'
     // lingua italiana = 'IT'
     // english language = 'EN'
-    SELECTED_LANGUAGE : 'EN',
+    SELECTED_LANGUAGE : 'FR',
 
     LANGUAGES : ['EN', 'ES', 'IT', 'FR'],
     EN : {
