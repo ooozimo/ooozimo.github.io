@@ -84,7 +84,7 @@ export function generateQuestionAndAnswer(nums, puzzles){
     do {tempSecondQuestion = sample(Object.keys(QUESTIONS))} while(tempSecondQuestion == firstQuestion)
     const secondQuestion = tempSecondQuestion
 
-    const andWord = 'AND'
+    const andWord = 'OG'
 
     puzzles = puzzles.map(convertPuzzleDataLang)
 
