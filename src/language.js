@@ -4,7 +4,7 @@ export default
     // lengua española = 'ES'
     // lingua italiana = 'IT'
     // english language = 'EN'
-    SELECTED_LANGUAGE : 'FR',
+    SELECTED_LANGUAGE : 'EN',
 
     LANGUAGES : ['EN', 'ES', 'IT', 'FR'],
     EN : {
@@ -17,6 +17,6 @@ export default
         COLORS : ['nero', 'bianco', 'blu', 'rosso', 'giallo', 'arancione', 'verde', 'viola']
     },
     FR : {
-        COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla']
+        COLORS : ['noir', 'blanc', 'bleu', 'rouge', 'jaune', 'orange', 'vert', 'violet']
     }
 }
